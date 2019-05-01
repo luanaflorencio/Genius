@@ -1,0 +1,26 @@
+		table {
+			margin: auto;
+			margin-top: 40px;
+		}
+		table, td, th  {
+			font-size: 120%;
+			border: 0px solid 
+			border-collapse: collapse;
+			text-shadow: 0 0 0.2em #ef020e, 0 0 0.2em #ef020e,
+        	0 0 0.2em #ef020e;
+		}
+		td{
+			 padding: 5px;
+			 text-align: center;
+			 text-shadow: 0 0 0.2em #ef020e, 0 0 0.2em #ef020e,
+        	0 0 0.2em #ef020e;
+		}
+		.sobregenius{
+			font-size: 150%;
+			text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F,
+        	0 0 0.2em #87F;
+        	text-align: center;
+        }
+        .espaco{
+        	padding-bottom: 20px;
+        }

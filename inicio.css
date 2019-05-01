@@ -1,0 +1,20 @@
+a {
+			color: black;
+			text-align: center;
+			font-size: 40px;
+			margin: 2%;
+			text-decoration: none;
+			animation-name: example; 
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+
+		}
+		 @keyframes example {
+		 	25% {text-shadow: 0 0 0.2em green,0 0 0.2em green,0 0 0.2em green;}
+		 	50% {text-shadow: 0 0 0.2em red,0 0 0.2em red,0 0 0.2em red;}
+		 	75% {text-shadow: 0 0 0.2em blue,0 0 0.2em blue,0 0 0.2em blue;}
+		 	100% {text-shadow: 0 0 0.2em yellow,0 0 0.2em yellow,0 0 0.2em yellow;}
+		 }
+	.centrarmenu{
+            text-align: center;
+         }

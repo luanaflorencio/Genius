@@ -1,0 +1,8 @@
+p {
+			color: black;
+			text-shadow: 0 0 0.2em #ef020e, 0 0 0.2em #ef020e,
+        	0 0 0.2em #ef020e;
+			text-align: center;
+			font-size: 155%;
+			margin: 2%;
+}
