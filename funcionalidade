@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        :root {
+            --bw: 3px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .genius {
+            width: 50vh; /* viewport height */
+            height: 50vh;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: auto;
+            margin-top: 25vh;
+            box-sizing: content-box;
+            border: calc(2 * var(--bw)) solid black;
+        }
+        .genius > div {
+            width: 25vh;
+            height: 25vh;
+            border: 1px solid black;
+            position: absolute;
+        }
+        .genius > .center {
+            width: 20vh;
+            height: 20vh;
+            background: white;
+            position: absolute;
+            top: 15vh;
+            left: 15vh;
+            border-width: calc(2 * var(--bw));
+            border-radius: 50%;
+        }
+        .genius > .tl {
+            top: 0;
+            left: 0;
+            border-width: 0 var(--bw) var(--bw) 0;
+            border-top-left-radius: 50%;
+            background: hsl(60, 100%, 20%);
+        }
+        .genius > .tr {
+            top: 0;
+            right: 0;
+            border-width: 0 0 var(--bw) var(--bw);
+            border-top-right-radius: 50%;
+            background: hsl(120, 100%, 20%);
+        }
+        .genius > .bl {
+            bottom: 0;
+            left: 0;
+            border-width: var(--bw) var(--bw) 0 0;
+            border-bottom-left-radius: 50%;
+            background: hsl(240, 100%, 20%);
+        }
+        .genius > .br {
+            bottom: 0;
+            right: 0;
+            border-width: var(--bw) 0 0 var(--bw);
+            border-bottom-right-radius: 50%;
+            background: hsl(0, 100%, 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="genius">
+        <div class="tl" id="cor0"></div>
+        <div class="tr" id="cor1"></div>
+        <div class="bl" id="cor2"></div>
+        <div class="br" id="cor3"></div>
+        <div class="center"></div>
+    </div>
+    <p id="msg"></p>
+    <script>
+
+            // a= mathfloor(math.random()*4);
+            // sequencia.push(a);
+            // alert(sequencia);
+        let c = [
+            document.getElementById('cor0'),
+            document.getElementById('cor1'),
+            document.getElementById('cor2'),
+            document.getElementById('cor3')
+        ];
+             
+
+        let cores = [60, 120, 240, 0];
+        let sequencia = []; // sequência de cores que serão acesas
+        let sequenciaU = [];
+            function getRandom(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            for (let i = 0 ; i < 3 ; i++){
+              sequencia.push(getRandom(0,3));
+            }
+
+        let i = 0;
+        let j = 0;
+
+            setInterval(function() {
+                if (i < sequencia.length) {
+                    cor = sequencia[i];
+                    c[cor].style.background = `hsl(${cores[cor]}, 100%, 50%)`;
+                    i++;
+                    setTimeout(function() {
+                        c[cor].style.background = `hsl(${cores[cor]}, 100%, 20%)`;
+                    }, 800);
+                }
+            }, 1000);
+
+
+
+            document.getElementById("cor0").onclick = function() {
+                sequenciaU.push(0);
+                alert(sequenciaU);
+            }
+
+            document.getElementById("cor1").onclick = function() {
+                sequenciaU.push(1);
+                alert(sequenciaU);
+            }
+
+            document.getElementById("cor2").onclick = function() {
+                sequenciaU.push(2);
+                alert(sequenciaU);
+            }
+
+            document.getElementById("cor3").onclick = function() {
+                sequenciaU.push(3);
+                alert(sequenciaU);
+            }
+
+            function compara(arr1,arr2){
+                 c=0
+                for(i=0; i < arr1.length; i++){
+                    if(arr1[i] == arr2[i]){
+
+                    }else{
+                        c++
+                    }
+                }
+
+                if(c > 0){
+                    console.log("deu errado bro");
+
+                }else{
+                  console.log("o boy é bom");
+                }
+            }
+
+            compara(sequencia, sequenciaU);
+
+        // userClick(function(){
+        //     if(j<sequencia.length){
+        //         document.getElementById() == 
+        //     }
+        // })
+
+        
+    </script>
+</body>
+</html>

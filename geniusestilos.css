@@ -1,0 +1,187 @@
+body{
+ background: black;
+}
+/* Essa keyframes seria responsável 
+por uma animação de fundo, mas a ideia será
+adiada para a segunda entrega onde trabalharemos
+melhor esse ponto do  trabalho com a formação de
+site responsivo em javascript.
+/*@keyframes green{
+   0%
+   {
+      background-color: rgb(0,0,255); /*blue*/
+   /*}
+   25%
+   {
+      background-color: #FF0000; /*red*/
+   /*}
+   50%
+   {
+      background-color: rgb(0,255,0); /*verde*/
+   /*}
+   75%
+   {
+      background-color: rgb(255,255,0); /*yellow*/
+   /*}
+   100%
+   {
+      background-color: blue;
+   }
+}*/
+
+/*div.quadrado {
+   height: 21px;
+   width: 22px;
+   background-color: green;
+   border-radius: 5%; 
+   left: 10px;
+   top:20px;
+   animation: green 5s linear infinite;
+   display: inline-block;
+   margin: 5px;
+   padding: 10px;
+}*/
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 2;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+h1.estilo1:hover{
+animation: flash 2s;
+}
+
+/*  h1 será responsável por retirar o
+ link, definir a fonte de família utilizada,
+ a posição onde o objeto estará localizado, o
+ tamanho da fonte e o sombreamento;*/
+h1{
+  
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;   
+  position: absolute;
+  top: 72%;
+  left: 17%;
+  transform: translate(-50%,-50%);
+  font-size: 6em;
+  color: #fff;
+  text-shadow: 0 0 20px #FF0000;
+}
+
+/*  h2 será responsável por retirar o
+ link, definir a fonte de família utilizada,
+ a posição onde o objeto estará localizado, o
+ tamanho da fonte e o sombreamento;*/
+
+ @keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 2;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+h2{
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;   
+  position: absolute;
+  top: 70%;
+  left: 49%;
+  transform: translate(-50%,-50%);
+  font-size: 6em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+h2:hover{
+  animation: flash 2s
+}
+
+/*  h3 será responsável por retirar o
+ link, definir a fonte de família utilizada,
+ a posição onde o objeto estará localizado, o
+ tamanho da fonte e o sombreamento;*/
+ 
+
+h3{
+   text-decoration: none;
+  font-family: 'Quicksand', sans-serif;   
+  position: absolute;
+  top: 68%;
+  left: 81%;
+  transform: translate(-50%,-50%);
+  font-size: 6em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff0000;
+} 
+
+h3:hover{
+  animation: flash 2s
+}
+
+/*  h4 será responsável por retirar o
+ link, definir a fonte de família utilizada,
+ a posição onde o objeto estará localizado, o
+ tamanho da fonte, sombreamento e animação;*/
+
+h4{
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;   
+  position: absolute;
+  top:  0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 10em;
+  color: #fff;
+  animation: blue 3s linear infinite;
+} 
+
+h4:hover{
+  animation: flash 0.5s;
+  }
+
+/* será responsável por realizar animação do item citado(h4).*/
+
+@keyframes blue{
+   0%
+   {
+      color: rgb(0,0,255); /*blue*/
+      text-shadow: blue;
+      text-shadow: 0 0 20px;
+   }
+   25%
+   {
+      color: #FF0000; /*red*/
+      text-shadow: red;
+      text-shadow: 0 0 20px;
+   }
+   50%
+   {
+      color: rgb(0,255,0); /*verde*/
+      text-shadow: green;
+      text-shadow: 0 0 20px;
+   }
+   75%
+   {
+      color: rgb(255,255,0); /*yellow*/
+      text-shadow: yellow;
+      text-shadow: 0 0 20px;
+   }
+   100%
+   {
+      color: blue;
+      text-shadow: blue;
+      text-shadow: 0 0 20px;
+   }
+}
