@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Genius</title>
+    <link rel="stylesheet" href="geniusestilos.css">
     <style>
         :root {
             --bw: 3px;
@@ -70,6 +71,7 @@
     </style>
 </head>
 <body>
+    <a href="index.html" class="top">Voltar</a>
     <div class="genius">
         <div class="tl" id="cor0"></div>
         <div class="tr" id="cor1"></div>
@@ -138,7 +140,7 @@
                 alert(sequenciaU);
             }
 
-            function compara(arr1,arr2){
+           function compara(arr1,arr2){
                  c=0
                 for(i=0; i < arr1.length; i++){
                     if(arr1[i] == arr2[i]){
@@ -156,7 +158,7 @@
                 }
             }
 
-            compara(sequencia, sequenciaU);
+            /*compara(sequencia, sequenciaU);*/
 
         // userClick(function(){
         //     if(j<sequencia.length){
